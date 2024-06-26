@@ -6,10 +6,9 @@ const Reviews = () => {
 		<Carousel
 			indicators={false}
 			slideInterval={3500}
-			className="h-[calc(100vh-200px)]"
+			className="h-[55vh] lg:h-[70vh]"
 		>
 			<div className="flex justify-evenly gap-4 py-2 px-4 ">
-				<CardComponent />
 				<CardComponent />
 				<CardComponent />
 			</div>

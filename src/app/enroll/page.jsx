@@ -3,40 +3,57 @@ import { Button, Checkbox, Label, TextInput } from "flowbite-react";
 
 const page = () => {
 	return (
-		<div className="min-h-[calc(100vh-230px)] m-auto">
-			<form className="flex max-w-md flex-col gap-4">
+		<div className="min-h-[calc(100vh-230px)] flex justify-center items-center">
+			<form className="flex max-w-lg flex-col gap-4">
 				<div>
 					<div className="mb-2 block">
 						<Label
-							htmlFor="email1"
+							htmlFor="name"
+							value="Your Name"
+						/>
+					</div>
+					<TextInput
+						id="name"
+						type="text"
+						placeholder="John Doe"
+						required
+					/>
+				</div>
+				<div>
+					<div className="mb-2 block">
+						<Label
+							htmlFor="email"
 							value="Your email"
 						/>
 					</div>
 					<TextInput
-						id="email1"
+						id="email"
 						type="email"
-						placeholder="name@flowbite.com"
+						placeholder="name@email.com"
 						required
 					/>
 				</div>
 				<div>
 					<div className="mb-2 block">
 						<Label
-							htmlFor="password1"
-							value="Your password"
+							htmlFor="number"
+							value="Contact Number"
 						/>
 					</div>
 					<TextInput
-						id="password1"
-						type="password"
+						id="number"
+						type="number"
+						placeholder="7777777777"
 						required
 					/>
 				</div>
-				<div className="flex items-center gap-2">
-					<Checkbox id="remember" />
-					<Label htmlFor="remember">Remember me</Label>
-				</div>
-				<Button type="submit">Submit</Button>
+
+				<Button
+					color="green"
+					type="submit"
+				>
+					Pay
+				</Button>
 			</form>
 		</div>
 	);
