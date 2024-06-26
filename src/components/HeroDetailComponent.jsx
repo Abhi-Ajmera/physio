@@ -1,4 +1,5 @@
 import { Button } from "flowbite-react";
+import Link from "next/link";
 const HeroDetailComponent = () => {
 	return (
 		<div className="flex flex-col justify-between max-sm:justify-center gap-6 max-w-[90vw] md:max-w-[50vw]">
@@ -16,19 +17,14 @@ const HeroDetailComponent = () => {
 				modi enim voluptatum libero.
 			</p>
 			<div className="justify-center md:justify-start flex gap-6 max-sm:gap-4">
-				<Button
-					size="sm"
-					color="green"
-				>
-					Learn More
-				</Button>
-				<Button
-					size="sm"
-					color="success"
-					className="bg-[#00923F] hover:bg-[#277b4c]"
-				>
-					Enroll Now
-				</Button>
+				<Link href="/enroll">
+					<Button
+						color="success"
+						className="bg-[#00923F] hover:bg-[#277b4c]"
+					>
+						Enroll Now
+					</Button>
+				</Link>
 			</div>
 		</div>
 	);

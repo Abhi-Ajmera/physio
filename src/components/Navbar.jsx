@@ -36,7 +36,7 @@ export default function NavbarComp() {
 					href="/about"
 					className="text-black hover:!text-white"
 				>
-					About Us
+					About
 				</Navbar.Link>
 				<Navbar.Link
 					as={Link}
@@ -44,6 +44,13 @@ export default function NavbarComp() {
 					className="text-black hover:!text-white"
 				>
 					Contact Us
+				</Navbar.Link>
+				<Navbar.Link
+					as={Link}
+					href="/enroll"
+					className="text-black hover:!text-white"
+				>
+					Enroll Now
 				</Navbar.Link>
 			</Navbar.Collapse>
 		</Navbar>
