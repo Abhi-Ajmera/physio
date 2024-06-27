@@ -7,7 +7,7 @@ export function LogoCarousel() {
 		<Carousel
 			indicators={false}
 			slideInterval={3500}
-			className="h-[200px] sm:h-[120px] bg-[#00923F]"
+			className="max-sm:h-[60px] sm:h-28 bg-[#00923F]"
 			leftControl=" "
 			rightControl=" "
 		>

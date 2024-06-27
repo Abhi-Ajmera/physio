@@ -8,8 +8,8 @@ export default function Home() {
 	return (
 		<>
 			{/* Hero section */}
-			<div className="max-sm:h-[calc(100vh-80px)] flex flex-col justify-center mb-8">
-				<div className="pt-8 pb-2 md:pb-0 md:pt-0 flex flex-col md:flex-row md:justify-center items-center gap-12 h-screen md:h-[calc(100vh-220px)]">
+			<div className="flex flex-col justify-center mb-4">
+				<div className="pt-8 pb-2 md:pb-0 md:pt-0 flex flex-col md:flex-row md:justify-center items-center gap-8 sm:gap-12 md:h-[calc(100vh-220px)]">
 					<HeroDetailComponent />
 					<Image
 						width={480}
@@ -23,7 +23,7 @@ export default function Home() {
 				<LogoCarousel />
 			</div>
 			{/* Benefit Section */}
-			<div className="my-2 flex flex-col-reverse md:flex-row justify-center items-center gap-4">
+			<div className="py-4 flex flex-col-reverse md:flex-row justify-center items-center gap-4">
 				<div className="relative w-80 h-80 lg:w-96 lg:h-96">
 					<Image
 						className="z-10"
