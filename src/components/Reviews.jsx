@@ -9,17 +9,17 @@ const Reviews = () => {
 			slideInterval={3500}
 			className="h-96"
 			leftControl={
-				<FaChevronLeft className="border border-1 border-black w-8 h-8 p-2 text-black rounded-full text-xl" />
+				<FaChevronLeft className="border border-1 border-black h-8 w-8 sm:w-9 sm:h-9 p-2 text-black rounded-full text-xl" />
 			}
 			rightControl={
-				<FaChevronRight className="border border-1 border-black w-8 h-8 p-2 text-black rounded-full text-xl" />
+				<FaChevronRight className="border border-1 border-black h-8 w-8 sm:w-9 sm:h-9 p-2 text-black rounded-full text-xl" />
 			}
 		>
-			<div className="flex justify-evenly gap-4 py-2 px-4 ">
+			<div className="flex justify-evenly gap-4 py-2 px-8 ">
 				<CardComponent />
 				<CardComponent />
 			</div>
-			<div className="flex justify-evenly gap-4 py-2 px-4 ">
+			<div className="flex justify-evenly gap-4 py-2 px-8 ">
 				<CardComponent />
 				<CardComponent />
 			</div>

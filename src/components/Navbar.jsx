@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { Navbar } from "flowbite-react";
+import { Avatar, Dropdown, Navbar } from "flowbite-react";
 import Image from "next/image";
 
 export default function NavbarComp() {
@@ -22,33 +22,53 @@ export default function NavbarComp() {
 					alt="Physio-Plus"
 				/>
 			</Navbar.Brand>
-			<Navbar.Toggle />
-			<Navbar.Collapse className="">
+			<div className="flex gap-2 md:order-2">
+				<Dropdown
+					arrowIcon={false}
+					inline
+					label={
+						<Avatar
+							alt="User settings"
+							img="/Images/user.png"
+							rounded
+						/>
+					}
+				>
+					<Dropdown.Header className="hover:bg-[#00923F] hover:text-white">
+						<span className="block text-sm">Hi, John Doe</span>
+					</Dropdown.Header>
+					<Dropdown.Item className="hover:bg-[#00923F] hover:text-white">Update Info</Dropdown.Item>
+					<Dropdown.Item className="hover:bg-[#00923F] hover:text-white">Sign out</Dropdown.Item>
+				</Dropdown>
+				<Navbar.Toggle />
+			</div>
+
+			<Navbar.Collapse>
 				<Navbar.Link
 					as={Link}
 					href="/"
-					className="text-black hover:!text-white"
+					className="text-black md:hover:!text-white"
 				>
 					Home
 				</Navbar.Link>
 				<Navbar.Link
 					as={Link}
 					href="/about"
-					className="text-black hover:!text-white"
+					className="text-black md:hover:!text-white"
 				>
 					About
 				</Navbar.Link>
 				<Navbar.Link
 					as={Link}
 					href="/contact-us"
-					className="text-black hover:!text-white"
+					className="text-black md:hover:!text-white"
 				>
 					Contact Us
 				</Navbar.Link>
 				<Navbar.Link
 					as={Link}
 					href="/enroll"
-					className="text-black hover:!text-white"
+					className="text-black md:hover:!text-white"
 				>
 					Enroll Now
 				</Navbar.Link>
