@@ -29,7 +29,7 @@ export default function NavbarComp() {
 					label={
 						<Avatar
 							alt="User settings"
-							img="/Images/user.png"
+							img="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
 							rounded
 						/>
 					}
@@ -37,8 +37,8 @@ export default function NavbarComp() {
 					<Dropdown.Header className="hover:bg-[#00923F] hover:text-white">
 						<span className="block text-sm">Hi, John Doe</span>
 					</Dropdown.Header>
-					<Dropdown.Item className="hover:bg-[#00923F] hover:text-white">Update Info</Dropdown.Item>
-					<Dropdown.Item className="hover:bg-[#00923F] hover:text-white">Sign out</Dropdown.Item>
+					<Dropdown.Item className="hover:!bg-[#00923F] hover:!text-white">Update Info</Dropdown.Item>
+					<Dropdown.Item className="hover:!bg-[#00923F] hover:!text-white">Sign out</Dropdown.Item>
 				</Dropdown>
 				<Navbar.Toggle />
 			</div>
