@@ -14,7 +14,7 @@ export default function Home() {
 					<Image
 						width={480}
 						height={480}
-						className="h-48 w-48 md:w-80 md:h-80"
+						className=" w-96 h-96 md:w-80 md:h-80 rounded-3xl"
 						src={"/Images/1.jpg"}
 						alt=""
 					/>
@@ -24,9 +24,9 @@ export default function Home() {
 			</div>
 			{/* Benefit Section */}
 			<div className="py-4 flex flex-col-reverse md:flex-row justify-center items-center gap-4">
-				<div className="relative w-80 h-80 lg:w-96 lg:h-96">
+				<div className="relative w-96 h-96">
 					<Image
-						className="z-10"
+						className="z-10 rounded-3xl md:p-4"
 						src={"/Images/1.jpg"}
 						alt=""
 						fill
@@ -40,9 +40,9 @@ export default function Home() {
 			{/* Benefit Section */}
 			<div className="my-4 flex flex-col md:flex-row justify-center items-center gap-4">
 				<DetailComponent title="Benefits of our Internship" />
-				<div className="relative w-80 h-80 lg:w-96 lg:h-96">
+				<div className="relative  w-96 h-96">
 					<Image
-						className="z-10"
+						className="z-10 rounded-3xl md:p-4"
 						src={"/Images/1.jpg"}
 						alt=""
 						fill
