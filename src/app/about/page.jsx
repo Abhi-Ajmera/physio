@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const page = () => {
 	return (
-		<div className="min-h-[calc(100vh-230px)] flex flex-col justify-center items-center gap-4 my-4 mx-8">
+		<div className="min-h-[calc(100vh-230px)] flex flex-col justify-center items-center gap-4 my-4 mx-16">
 			<h2 className="text-3xl sm:text-4xl text-center font-bold mt-4">About Us</h2>
 			<Image
 				width={720}

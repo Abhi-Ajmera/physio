@@ -4,7 +4,7 @@ import { Button, Label, TextInput } from "flowbite-react";
 const page = () => {
 	return (
 		<div className="min-h-[calc(100vh-230px)] flex justify-center items-center">
-			<form className="flex max-w-lg flex-col gap-4">
+			<form className="w-[60vw] flex flex-col gap-4">
 				<div>
 					<div className="mb-2 block">
 						<Label
