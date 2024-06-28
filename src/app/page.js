@@ -14,7 +14,7 @@ export default function Home() {
 					<Image
 						width={480}
 						height={480}
-						className=" w-60 h-60 md:w-80 md:h-80 rounded-3xl"
+						className="w-60 h-60 md:w-80 md:h-80 rounded-3xl"
 						src={"/Images/1.jpg"}
 						alt=""
 					/>
@@ -26,26 +26,29 @@ export default function Home() {
 
 			{/* Benefit Section */}
 			<div className="py-4 flex flex-col-reverse md:flex-row justify-center items-center gap-4">
-				<div className="relative w-96 h-96">
+				<div className="relative flex justify-center items-center w-60 h-60 md:w-80 md:h-80 lg:h-96 lg:w-96">
 					<Image
-						className="z-10 rounded-3xl md:p-4"
+						className="rounded-3xl md:p-4"
 						src={"/Images/1.jpg"}
 						alt=""
 						fill
 					/>
 				</div>
 				<DetailComponent
-					title="If you've completed BPT or MPT then Become Sports Physiotherapist"
-					subtitile="lorem ipsum dolor sit amet, consectetur adipiscing lorem ipsum dolor sit amet, consectetur adipiscing lorem ipsum dolor sit amet, consectetur adipiscing"
+					title="Become Sports Physiotherapist"
+					subtitile="lorem ipsum dolor sit amet, consectetur adipiscing consectetur adipiscing"
 				/>
 			</div>
 
 			{/* Benefit Section */}
 			<div className="my-4 flex flex-col md:flex-row justify-center items-center gap-4">
-				<DetailComponent title="Benefits of our Internship" />
-				<div className="relative  w-96 h-96">
+				<DetailComponent
+					title="Benefits of our Internship"
+					subtitile="lorem ipsum dolor sit amet, consectetur adipiscing consectetur adipiscing"
+				/>
+				<div className="relative flex justify-center items-center w-60 h-60 md:w-80 md:h-80 lg:h-96 lg:w-96">
 					<Image
-						className="z-10 rounded-3xl md:p-4"
+						className="rounded-3xl md:p-4"
 						src={"/Images/1.jpg"}
 						alt=""
 						fill

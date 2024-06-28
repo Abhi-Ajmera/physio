@@ -22,9 +22,9 @@ export default function CardComponent() {
 					<FaStar className="text-yellow-400" />
 					<FaStar className="text-gray-300" />
 				</div>
-				<div className="max-sm:text-xs mt-2 flex space-x-3 lg:mt-4">
+				<div className="max-sm:text-xs mt-2 flex space-x-3 lg:mt-4 mb-2">
 					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et magnam ea, molestiae natus id aut dignissimos,
-					dolor nulla autem beatae facere cum inventore, odit molestias.
+					dolor nulla autem beatae facere cum inventore.
 				</div>
 			</div>
 		</Card>

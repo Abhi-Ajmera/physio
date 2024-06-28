@@ -7,7 +7,7 @@ const Reviews = () => {
 		<Carousel
 			indicators={false}
 			slideInterval={3500}
-			className="h-96"
+			className="h-[25rem] sm:h-[26rem]"
 			leftControl={
 				<FaChevronLeft className="border border-1 border-black h-8 w-8 sm:w-9 sm:h-9 p-2 text-black rounded-full text-xl" />
 			}

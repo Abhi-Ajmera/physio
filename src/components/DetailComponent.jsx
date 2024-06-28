@@ -7,7 +7,7 @@ const DetailComponent = ({ title, subtitile }) => {
 			<h2 className="text-center text-3xl md:text-4xl lg:text-4xl font-semibold leading-tight">{title}</h2>
 			{subtitile && <h4 className="text-center md:text-left text-gray-400  leading-tight">{subtitile}</h4>}
 			<div className="justify-center sm:justify-start flex gap-6 max-sm:gap-4">
-				<ul className="mt-4 flex flex-col gap-4">
+				<ul className="flex flex-col gap-4">
 					{subtitile && <p className="text-xl text-center">Benefits of Our Program</p>}
 					<li className="flex gap-4 items-center">
 						<div className="flex flex-wrap gap-2">
