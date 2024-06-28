@@ -5,10 +5,10 @@ const HeroDetailComponent = () => {
 		<div className="flex flex-col justify-between max-sm:justify-center gap-2 sm:gap-6 max-w-[90vw] md:max-w-[50vw]">
 			<h2 className="text-center md:text-left text-3xl md:text-4xl lg:text-4xl font-semibold leading-tight">
 				Get Internship as <br /> Sports
-				<span className="text-[#00923F]"> Physiotherapist</span>
+				<span className="text-[#00923F]">Physiotherapist</span>
 				<br /> with {""}
 				<span className="text-[#00923F]">
-					physio<sup>+</sup>
+					PHysio<sub>+</sub>
 				</span>
 			</h2>
 			<p className="text-center sm:text-left leading-relaxed">

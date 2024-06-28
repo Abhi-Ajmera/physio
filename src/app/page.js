@@ -9,7 +9,7 @@ export default function Home() {
 		<>
 			{/* Hero section */}
 			<div className="flex flex-col justify-center mb-4">
-				<div className="pt-8 pb-2 md:pb-0 md:pt-0 flex flex-col md:flex-row md:justify-center items-center gap-4 sm:gap-12 md:h-[calc(100vh-220px)]">
+				<div className="pt-8 pb-2 md:pb-0 md:pt-0 flex flex-col md:flex-row md:justify-center items-center gap-4 sm:gap-12 md:h-[calc(100vh-180px)] max-sm:mx-0 max-md:mx-16 ">
 					<HeroDetailComponent />
 					<Image
 						width={480}
