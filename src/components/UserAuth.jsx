@@ -1,5 +1,5 @@
 "use client";
-import { Avatar, Dropdown, Navbar } from "flowbite-react";
+import { Avatar, Dropdown } from "flowbite-react";
 import { signOut } from "next-auth/react";
 import Link from "next/link";
 
@@ -35,7 +35,7 @@ const UserAuth = ({ user }) => {
 					Sign out
 				</Dropdown.Item>
 			</Dropdown>
-			<Navbar.Toggle />
+			
 		</>
 	);
 };

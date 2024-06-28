@@ -47,6 +47,7 @@ export default function NavbarComp() {
 					</Button>
 				)}
 				{status === "authenticated" && <UserAuth user={data.user} />}
+				<Navbar.Toggle className="text-white hover:text-gray-300" />
 			</div>
 			<Navbar.Collapse>
 				<Navbar.Link
