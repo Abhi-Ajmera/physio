@@ -35,7 +35,6 @@ const UserAuth = ({ user }) => {
 					Sign out
 				</Dropdown.Item>
 			</Dropdown>
-			
 		</>
 	);
 };

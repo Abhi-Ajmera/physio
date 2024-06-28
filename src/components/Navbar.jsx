@@ -3,8 +3,8 @@ import Link from "next/link";
 import { FaGoogle } from "react-icons/fa";
 import { Button, Navbar } from "flowbite-react";
 import Image from "next/image";
-import UserAuth from "./userAuth";
 import { signIn, useSession } from "next-auth/react";
+import UserAuth from "./UserAuth";
 
 export default function NavbarComp() {
 	const { data, status } = useSession();
