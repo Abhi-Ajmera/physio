@@ -2,7 +2,7 @@ import { Button } from "flowbite-react";
 import Link from "next/link";
 const HeroDetailComponent = () => {
 	return (
-		<div className="flex flex-col justify-between max-sm:justify-center gap-6 max-w-[90vw] md:max-w-[50vw]">
+		<div className="flex flex-col justify-between max-sm:justify-center gap-2 sm:gap-6 max-w-[90vw] md:max-w-[50vw]">
 			<h2 className="text-center md:text-left text-3xl md:text-4xl lg:text-4xl font-semibold leading-tight">
 				Get Internship as <br /> Sports
 				<span className="text-[#00923F]"> Physiotherapist</span>
@@ -20,7 +20,8 @@ const HeroDetailComponent = () => {
 				<Link href="/enroll">
 					<Button
 						color="success"
-						className="bg-[#00923F] hover:bg-[#277b4c]"
+						size="lg"
+						className="bg-[#00923F] hover:bg-[#277b4c] px-4"
 					>
 						Enroll Now
 					</Button>
