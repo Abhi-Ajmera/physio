@@ -1,9 +1,14 @@
 "use client";
 import Link from "next/link";
-import { Avatar, Dropdown, Navbar } from "flowbite-react";
+import { FaGoogle } from "react-icons/fa";
+import { Button, Navbar } from "flowbite-react";
 import Image from "next/image";
+import UserAuth from "./userAuth";
+import { signIn, useSession } from "next-auth/react";
 
 export default function NavbarComp() {
+	const { data, status } = useSession();
+	console.log(status);
 	return (
 		<Navbar
 			fluid
@@ -23,26 +28,26 @@ export default function NavbarComp() {
 				/>
 			</Navbar.Brand>
 			<div className="flex gap-2 md:order-2">
-				<Dropdown
-					arrowIcon={false}
-					inline
-					label={
-						<Avatar
-							alt="User settings"
-							img="https://flowbite.com/docs/images/people/profile-picture-5.jpg"
-							rounded
-						/>
-					}
-				>
-					<Dropdown.Header className="hover:bg-[#00923F] hover:text-white">
-						<span className="block text-sm">Hi, John Doe</span>
-					</Dropdown.Header>
-					<Dropdown.Item className="hover:!bg-[#00923F] hover:!text-white">Update Info</Dropdown.Item>
-					<Dropdown.Item className="hover:!bg-[#00923F] hover:!text-white">Sign out</Dropdown.Item>
-				</Dropdown>
-				<Navbar.Toggle />
+				{status === "loading" && (
+					<Button
+						color="light"
+						isProcessing
+					>
+						Loading
+					</Button>
+				)}
+				{status === "unauthenticated" && (
+					<Button
+						color="light"
+						onClick={() => signIn("google")}
+					>
+						<p className="text-center flex-nowrap gap-1.5 flex justify-center items-center">
+							<FaGoogle /> Sign In
+						</p>
+					</Button>
+				)}
+				{status === "authenticated" && <UserAuth user={data.user} />}
 			</div>
-
 			<Navbar.Collapse>
 				<Navbar.Link
 					as={Link}

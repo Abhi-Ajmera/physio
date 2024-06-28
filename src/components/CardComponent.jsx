@@ -9,7 +9,7 @@ export default function CardComponent() {
 				<Image
 					alt="Bonnie image"
 					height="96"
-					src="/Images/user.png"
+					src="/Images/user.jpg"
 					width="96"
 					className=" object-fill mb-3 rounded-full shadow-lg max-sm:!w-10 max-sm:!h-10"
 				/>

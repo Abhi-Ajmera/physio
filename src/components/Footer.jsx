@@ -35,7 +35,7 @@ export default function FooterComp() {
 						</Footer.Link>
 						<Footer.Link
 							className="!text-black"
-							href="/cpntact-us"
+							href="/contact-us"
 							as={Link}
 						>
 							Contact
