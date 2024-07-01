@@ -3,6 +3,7 @@ import "./globals.css";
 import NavbarComp from "../components/Navbar";
 import FooterComp from "../components/Footer";
 import AuthProvider from "../provider/AuthProvider";
+import ReduxProvider from "../provider/ReduxProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,11 +16,13 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<body className={inter.className}>
-				<AuthProvider>
-					<NavbarComp />
-					{children}
-					<FooterComp />
-				</AuthProvider>
+				<ReduxProvider>
+					<AuthProvider>
+						<NavbarComp />
+						{children}
+						<FooterComp />
+					</AuthProvider>
+				</ReduxProvider>
 			</body>
 		</html>
 	);

@@ -3,6 +3,7 @@ import HeroDetailComponent from "../components/HeroDetailComponent";
 import DetailComponent from "../components/DetailComponent";
 import { LogoCarousel } from "../components/LogoCarousel";
 import Reviews from "../components/Reviews";
+import EnrollProcedure from "../components/EnrollProcedure";
 
 export default function Home() {
 	return (
@@ -25,7 +26,7 @@ export default function Home() {
 			</div>
 
 			{/* Benefit Section */}
-			<div className="py-4 flex flex-col-reverse md:flex-row justify-center items-center gap-4">
+			<div className="flex flex-col-reverse md:flex-row justify-center items-center gap-4 md:min-h-[54vh] lg:min-h-[calc(100vh-240px)] max-sm:py-12">
 				<div className="relative flex justify-center items-center w-60 h-60 md:w-80 md:h-80 lg:h-96 lg:w-96">
 					<Image
 						className="rounded-3xl md:p-4"
@@ -41,7 +42,7 @@ export default function Home() {
 			</div>
 
 			{/* Benefit Section */}
-			<div className="my-4 flex flex-col md:flex-row justify-center items-center gap-4">
+			<div className="md:min-h-[54vh] lg:min-h-[calc(100vh-240px)] flex flex-col md:flex-row justify-center items-center gap-4 max-sm:py-12">
 				<DetailComponent
 					title="Benefits of our Internship"
 					subtitile="lorem ipsum dolor sit amet, consectetur adipiscing consectetur adipiscing"
@@ -54,6 +55,11 @@ export default function Home() {
 						fill
 					/>
 				</div>
+			</div>
+
+			{/* Enroll Procedure */}
+			<div className="my-4 md:min-h-[54vh] lg:min-h-[calc(100vh-240px)] max-sm:py-12">
+				<EnrollProcedure />
 			</div>
 
 			{/* User Review Section */}
