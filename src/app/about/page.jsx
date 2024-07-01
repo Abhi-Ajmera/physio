@@ -7,7 +7,7 @@ const page = () => {
 			<Image
 				width={720}
 				height={360}
-				className="max-h-96"
+				className="max-h-96 rounded-3xl"
 				src={"/Images/1.jpg"}
 				alt=""
 			/>
